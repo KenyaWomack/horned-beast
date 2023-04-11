@@ -4,6 +4,6 @@ Estimate of time needed to complete: _3hours____
 
 Start time: ___6:50__
 
-Finish time: _9:45____
+Finish time: _10:00___
 
-Actual time needed to complete: ___2hours 55 minutes__
+Actual time needed to complete: ___3hours 10 minutes
