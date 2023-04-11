@@ -16,7 +16,9 @@ import { Component } from 'react';
      return (
 
        <div>
+      <h2>{this.props.beast.title}</h2>
          <Image width="200px" src={this.props.beast.image_url} onClick={this.addClick} />
+         <h3>{this.props.beast.description}</h3>
          <p>&hearts; {this.state.likes} </p>
        </div>
      )
