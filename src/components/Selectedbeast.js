@@ -7,6 +7,7 @@ class SelectedBeast extends React.Component {
     // super(props);
     // }
     render() {
+      console.log(this.props.currentBeast);
         return (
 
           
@@ -17,7 +18,12 @@ class SelectedBeast extends React.Component {
             <Modal.Header closeButton>
               <Modal.Title>Modal heading</Modal.Title>
             </Modal.Header>
-            <Modal.Body></Modal.Body>
+            <Modal.Body>
+            {this.props.currentBeast && (<><h2>{this.props.currentBeast.title}</h2>
+         <img width="200px" src={this.props.currentBeast.image_url} alt={this.props.currentBeast.description} />
+
+         <h3>{this.props.currentBeast.description}</h3></>)}
+            </Modal.Body>
             {/* <Modal.Body>{this.props.description}</Modal.Body> */}
             <Modal.Footer>
               <Button variant="secondary" onClick={this.props.handleClose}>
