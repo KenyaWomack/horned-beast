@@ -12,7 +12,7 @@ import React from 'react';
      this.setState({
        likes: this.state.likes + 1
      })
-     this.props.selectCurrentBeast(this.props.beast.title);
+     this.props.selectCurrentBeast(this.props.beast);
    }
    render() {
     // console.log (this.props.beast.title);

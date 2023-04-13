@@ -7,7 +7,7 @@ import React from 'react';
     console.log(this.props.currentBeast);
      return (
        <Card>
-         <Card.Img variant="top" src={this.props.currentBeast} />
+         <Card.Img variant="top" src={this.props.currentBeast.image_url} />
        </Card>
      )
    }
