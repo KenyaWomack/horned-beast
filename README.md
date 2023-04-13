@@ -1,9 +1,9 @@
-Number and name of feature: ___Feature #1: Display Images____________________________
+Number and name of feature: ___Passing Functions in Props___________________________
 
 Estimate of time needed to complete: _3hours____
 
-Start time: ___6:50__
+Start time: ___6:05_
 
-Finish time: _10:00___
+Finish time: ___
 
-Actual time needed to complete: ___3hours 10 minutes
+Actual time needed to complete: ___

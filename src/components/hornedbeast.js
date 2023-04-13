@@ -1,6 +1,6 @@
-import { Component } from 'react';
+import React from 'react';
  import Image from 'react-bootstrap/Image';
- class HornedBeast extends Component {
+ class HornedBeast extends React.Component {
    constructor(props) {
      super(props);
      this.state = {
@@ -8,11 +8,16 @@ import { Component } from 'react';
      }
    }
    addClick = () => {
+    console.log (this.props.beast.title);
      this.setState({
        likes: this.state.likes + 1
      })
+     this.props.selectCurrentBeast(this.props.beast.title);
    }
    render() {
+    // console.log (this.props.beast.title);
+    // console.log (this.props.beast.image_url);
+    // console.log (this.props.beast.description);
      return (
 
        <div>
