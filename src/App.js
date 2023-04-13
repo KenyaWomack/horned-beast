@@ -1,8 +1,10 @@
-import './App.css';
+// import './App.css';
+import React from 'react';
 import Header from './components/header';
-import Main from './components/main';
+import Main from './components/Main';
 import Footer from './components/footer';
-function App() {
+class App extends React.Component {
+render(){
   return (
     <div>
       <Header></Header>
@@ -11,5 +13,5 @@ function App() {
     </div>
   );
 }
-
+}
 export default App;
