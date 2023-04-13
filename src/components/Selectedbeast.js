@@ -17,7 +17,8 @@ class SelectedBeast extends React.Component {
             <Modal.Header closeButton>
               <Modal.Title>Modal heading</Modal.Title>
             </Modal.Header>
-            <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+            <Modal.Body></Modal.Body>
+            {/* <Modal.Body>{this.props.description}</Modal.Body> */}
             <Modal.Footer>
               <Button variant="secondary" onClick={this.props.handleClose}>
                 Close
