@@ -1,0 +1,16 @@
+.container {
+    border:2px solid red;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.beast-container {
+    border:2px solid blue;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    margin:0 auto;
+    flex-wrap: wrap;
+}
