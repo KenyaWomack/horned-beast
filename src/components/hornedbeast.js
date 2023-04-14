@@ -1,5 +1,6 @@
 import React from 'react';
  import Image from 'react-bootstrap/Image';
+ import Card from 'react-bootstrap/Card';
  class HornedBeast extends React.Component {
    constructor(props) {
      super(props);
@@ -20,12 +21,25 @@ import React from 'react';
     // console.log (this.props.beast.description);
      return (
 
-       <div>
-      <h2>{this.props.beast.title}</h2>
-         <Image width="200px" src={this.props.beast.image_url} onClick={this.addClick} />
-         <h3>{this.props.beast.description}</h3>
-         <p>&hearts; {this.state.likes} </p>
-       </div>
+       <Card className='mx-2 my-2'
+       style={{width:'20rem' }}
+       bg='dark'
+       text='light'
+       onClick={this.addClick}
+       >
+         <Card.Img variant='top' src={this.props.beast.image_url} />
+        <Card.Body>
+          <Card.Title>
+          {this.props.beast.title}
+          </Card.Title>
+        </Card.Body>
+        <Card.Text>
+        {this.props.beast.description}
+        </Card.Text>
+        <Card.Text>
+        &hearts; {this.state.likes}
+        </Card.Text>
+       </Card>
      )
    }
  }
