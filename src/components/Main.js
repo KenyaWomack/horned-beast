@@ -12,11 +12,15 @@ import '../main.css';
      this.state = {
       //  currentBeast: {image_url: null},
       currentBeast:{}, 
-       HornedBeast: list, 
+       currentBeastList: list, 
        showModal: false
      }
    }
-
+handleFilterChange=(event)=>{
+  console.log(event.target.value);
+  const updatedBeastList = list.filter(beast=>beast.horns===parseInt(event.target.value));
+  this.setState({currentBeastList: updatedBeastList})
+}
   //  handleOpenModal() {
   //   this.setState({showModal: true});
   //  }
@@ -28,7 +32,7 @@ handleCloseModal=()=>{this.setState({showModal: false});}
      render() {
       console.log (this.state.currentBeast)
       return (
-        <div className ='container'>
+        <div className='container'>
         <Form>
          <Form.Group controlId="formHornFilter">
            <br></br>
@@ -50,7 +54,7 @@ handleCloseModal=()=>{this.setState({showModal: false});}
         />
         <div className='beast-container'>
         
-        {this.state.HornedBeast.map((beast,i)=><HornedBeast key={i} beast={beast} selectCurrentBeast={this.selectCurrentBeast}/>)}
+        {this.state.currentBeastList.map((beast,i)=><HornedBeast key={i} beast={beast} selectCurrentBeast={this.selectCurrentBeast}/>)}
         
         </div>
          
