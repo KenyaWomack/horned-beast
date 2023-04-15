@@ -1,7 +1,7 @@
-import React from 'react';
+import {Component} from 'react';
  import Card from 'react-bootstrap/Card';
 
- class Results extends React.Component {
+ class Results extends Component {
 
    render() {
     console.log(this.props.currentBeast);

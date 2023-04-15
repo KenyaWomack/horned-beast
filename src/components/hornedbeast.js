@@ -1,7 +1,7 @@
-import React from 'react';
+import { Component} from 'react';
  import Image from 'react-bootstrap/Image';
  import Card from 'react-bootstrap/Card';
- class HornedBeast extends React.Component {
+ class HornedBeast extends Component {
    constructor(props) {
      super(props);
      this.state = {
